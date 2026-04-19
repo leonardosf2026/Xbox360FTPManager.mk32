@@ -1,0 +1,134 @@
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║   ██████╗ ██╗   ██╗██████╗  ██████╗ ██████╗  █████╗          ║
+║  ██╔═══██╗██║   ██║██╔══██╗██╔═══██╗██╔══██╗██╔══██╗         ║
+║  ██║   ██║██║   ██║██████╔╝██║   ██║██████╔╝███████║         ║
+║  ██║▄▄ ██║██║   ██║██╔══██╗██║   ██║██╔══██╗██╔══██║         ║
+║  ╚██████╔╝╚██████╔╝██║  ██║╚██████╔╝██║  ██║██║  ██║         ║
+║   ╚══▀▀═╝  ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝         ║
+║                                                              ║
+║        Xbox 360 FTP Manager – Aurora Edition v9             ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+
+Desenvolvido por: Leonardomk32
+Versão: 9.0
+Tema: Aurora Edition (Verde Neon e Azul Luminoso)
+
+══════════════════════════════════════════════════════════════
+🎮 DESCRIÇÃO
+══════════════════════════════════════════════════════════════
+O Xbox 360 FTP Manager – Aurora Edition é um software avançado
+que permite converter jogos de Xbox 360 do formato ISO para GOD
+e enviá-los diretamente para o console via FTP com facilidade,
+segurança e rapidez.
+
+══════════════════════════════════════════════════════════════
+✨ PRINCIPAIS FUNCIONALIDADES
+══════════════════════════════════════════════════════════════
+✔ Interface moderna inspirada no Aurora Dashboard
+✔ Conversão de jogos ISO para formato GOD
+✔ Envio automático de arquivos via FTP
+✔ Detecção automática do Xbox 360 na rede
+✔ Busca automática do ISO2GOD
+✔ Barras de progresso em tempo real
+✔ Upload para HDD e USB
+✔ Sistema de logs detalhado
+✔ Relógio digital integrado
+✔ Visual em estilo Neon Aurora
+✔ Compatível com Windows 10 e Windows 11
+
+══════════════════════════════════════════════════════════════
+🖥️ REQUISITOS DO SISTEMA
+══════════════════════════════════════════════════════════════
+• Windows 10 ou superior
+• Python 3.10 ou superior (para execução via código)
+• Xbox 360 desbloqueado (RGH ou JTAG)
+• Aurora Dashboard com FTP ativado
+• Conexão em rede local
+• ISO2GOD incluído na pasta "tools"
+
+══════════════════════════════════════════════════════════════
+🔑 CONFIGURAÇÕES PADRÃO DE FTP
+══════════════════════════════════════════════════════════════
+Endereço IP: 192.168.0.10
+Usuário: xbox
+Senha: xbox
+Porta: 21
+
+══════════════════════════════════════════════════════════════
+📂 DIRETÓRIOS SUPORTADOS
+══════════════════════════════════════════════════════════════
+HDD:
+➤ /Hdd1/Content/0000000000000000/
+
+USB:
+➤ /Usb0/Content/0000000000000000/
+
+Jogos:
+➤ /Hdd1/Games/
+➤ /Usb0/Games/
+
+══════════════════════════════════════════════════════════════
+🚀 COMO UTILIZAR O PROGRAMA
+══════════════════════════════════════════════════════════════
+1. Abra o Xbox 360 FTP Manager.
+2. Insira o IP do Xbox ou utilize a detecção automática.
+3. Clique em "Conectar".
+4. Selecione o arquivo ISO desejado.
+5. Escolha o diretório de destino.
+6. Clique em "Converter e Enviar".
+7. Aguarde a conclusão do processo.
+
+══════════════════════════════════════════════════════════════
+📦 ESTRUTURA DO PROJETO
+══════════════════════════════════════════════════════════════
+dist/
+ └── Xbox360FTPManager_Aurora_v7.exe
+
+assets/
+ ├── icon.ico
+ ├── xbox.png
+ └── controller.png
+
+tools/
+ └── iso2god-x86_64-windows.exe
+
+manual.txt
+README.txt
+
+══════════════════════════════════════════════════════════════
+🛠️ COMPILAÇÃO DO EXECUTÁVEL
+══════════════════════════════════════════════════════════════
+pyinstaller --noconfirm --onefile --windowed ^
+--name Xbox360FTPManager_Aurora_v7 ^
+--icon assets\icon.ico ^
+--add-data "assets;assets" ^
+--add-binary "tools\iso2god-x86_64-windows.exe;." ^
+main.py
+
+══════════════════════════════════════════════════════════════
+📦 INSTALADOR
+══════════════════════════════════════════════════════════════
+O instalador foi criado com o Inno Setup e inclui todos os
+recursos necessários para a execução do programa.
+
+══════════════════════════════════════════════════════════════
+🎨 IDENTIDADE VISUAL – AURORA EDITION
+══════════════════════════════════════════════════════════════
+Cores do Tema:
+• Verde Neon: #39FF14
+• Azul Aurora: #00E5FF
+• Azul Escuro: #0B1E2D
+• Preto Espacial: #050505
+
+══════════════════════════════════════════════════════════════
+© CRÉDITOS
+══════════════════════════════════════════════════════════════
+Desenvolvido por Leonardomk32
+Aurora Edition v7
+
+Projeto criado para gerenciamento e transferência de jogos
+do Xbox 360 com eficiência e estilo profissional.
+
+══════════════════════════════════════════════════════════════
